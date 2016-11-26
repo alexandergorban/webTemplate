@@ -21,12 +21,12 @@ namespace webTemplate
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
 
-        public void Init()
+        public override void Init()
         {
             logger.Info("Application Init");
         }
 
-        public void Dispose()
+        public override void Dispose()
         {
             logger.Info("Application Dispose");
         }
