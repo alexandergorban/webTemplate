@@ -1,0 +1,4 @@
+2016-11-27 02:09:54.6119|INFO|webTemplate.App_Start.PreStartApp|Application PreStart
+2016-11-27 02:09:55.1249|INFO|webTemplate.MvcApplication|Application Start
+2016-11-27 02:09:56.0000|INFO|webTemplate.MvcApplication|Application Init
+2016-11-27 02:09:56.1549|INFO|webTemplate.MvcApplication|Application Init

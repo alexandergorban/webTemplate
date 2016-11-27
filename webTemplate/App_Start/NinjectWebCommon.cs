@@ -1,15 +1,15 @@
+using webTemplate.Models;
+
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(webTemplate.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(webTemplate.App_Start.NinjectWebCommon), "Stop")]
 
 namespace webTemplate.App_Start
 {
-    using System;
-    using System.Web;
-
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
-
     using Ninject;
     using Ninject.Web.Common;
+    using System;
+    using System.Web;
 
     public static class NinjectWebCommon 
     {
@@ -61,6 +61,7 @@ namespace webTemplate.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Bind<IWeapon>().To<Gun>();
         }        
     }
 }
